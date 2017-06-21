@@ -6,6 +6,8 @@ import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 
 
@@ -93,6 +95,12 @@ public class MainFrame extends JFrame {
         sizeSpinner.setMinimumSize(spinnerMinDimension);
         sizeSpinner.setMaximumSize(spinnerMaxDimension);
         sizeSpinner.setPreferredSize(spinnerPreferredDimension);
+        sizeSpinner.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                graphPanel.updateUI();
+            }
+        });
 
         //Add to sub panel
         sizeSubPanel.add(sizeLabel);
