@@ -13,7 +13,7 @@ public class GraphPanel extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
-        Rectangle rect = new Rectangle(50,50, 100, 100);
+        Rectangle rect = new Rectangle(5,5, 100, 100);
         g2.draw(rect);
     }
 
