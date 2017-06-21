@@ -5,8 +5,11 @@ import objects.GraphPanel;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 
+
+/**
+ * Created by Dmitriy on 21.06.2017.
+ */
 public class MainFrame extends JFrame {
 
     private JLabel sizeLabel;
@@ -22,7 +25,6 @@ public class MainFrame extends JFrame {
         this.setTitle("Queen Placing v 0.1");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 400);
-//        this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.X_AXIS));
         getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.X_AXIS));
 
 
