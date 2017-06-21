@@ -1,2 +1,2 @@
 # QweenPlacing
-University ractic work
+University practic work
