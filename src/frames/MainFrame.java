@@ -158,7 +158,7 @@ public class MainFrame extends JFrame {
         getContentPane().add(rightPanel);
     }
 
-    public int getSpinnerValue(){
+    public int getSpinnerValue() {
         return (int) sizeSpinner.getValue();
     }
 }
