@@ -1,6 +1,12 @@
+import frames.MainFrame;
+
+import javax.swing.*;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        JFrame mainFrame = new MainFrame();
+        mainFrame.setVisible(true);
+
     }
 }
